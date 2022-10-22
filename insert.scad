@@ -51,8 +51,6 @@ sleeve_fit = 7;
 
 comp_width = box_height - (money_width+2*g_wall_thickness) - (heist_width+sleeve_fit+2*g_wall_thickness) - (gang_height+sleeve_fit+2*g_wall_thickness);
 
-echo(comp_width);
-
 dice_width = comp_width-2*g_wall_thickness;
 dice_height = 19;
 car_height = 30;

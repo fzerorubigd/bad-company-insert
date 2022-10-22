@@ -26,4 +26,4 @@ jobs:
           prerelease: false
           files: |
             dist/*.stl
-            game-insert.zip
+            bad-company-insert.zip
