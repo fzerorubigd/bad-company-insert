@@ -7,7 +7,7 @@ all: money_top tick_down heist_cards small_cards components components_optional
 	@echo Done!
 
 zip: clean all
-	zip $(TARGET) dist/*.stl
+	zip $(TARGET) dist/*.stl LICENSE
 
 money_top: box-money_top lid-money_top
 tick_down: box-tick_down
