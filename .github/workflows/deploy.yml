@@ -25,6 +25,5 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files:
-            LICENSE
             dist/*.stl
             bad-company-insert.zip
