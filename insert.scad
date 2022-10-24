@@ -60,25 +60,25 @@ data =
 [
     [   "money_top",
         [
-            [ BOX_SIZE_XYZ, [box_width, money_width+2*g_wall_thickness, box_depth/2+g_wall_thickness]],      
+            [ BOX_SIZE_XYZ, [box_width, money_width+2*g_wall_thickness, (box_depth+g_wall_thickness)/2]],      
             [ BOX_LID,
                 lid_attr,
             ],
             [ BOX_COMPONENT,                             
                 [
-                    [ CMP_COMPARTMENT_SIZE_XYZ, [ box_width-2*g_wall_thickness, money_width,box_depth/2] ],   
+                    [ CMP_COMPARTMENT_SIZE_XYZ, [ box_width-2*g_wall_thickness, money_width,(box_depth+g_wall_thickness)/2-g_wall_thickness] ],   
                 ]
             ]
         ]
     ],
     [   "tick_down",
         [
-            [ BOX_SIZE_XYZ, [box_width, money_width+2*g_wall_thickness, box_depth/2+g_wall_thickness] ],
+            [ BOX_SIZE_XYZ, [box_width, money_width+2*g_wall_thickness, (box_depth+g_wall_thickness)/2] ],
             [ BOX_STACKABLE_B, true],
             [ BOX_NO_LID_B, true],   
             [ BOX_COMPONENT,
                 [
-                    [CMP_COMPARTMENT_SIZE_XYZ,  [ box_width-2*g_wall_thickness, money_width, box_depth/2]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,  [ box_width-2*g_wall_thickness, money_width, (box_depth+g_wall_thickness)/2-g_wall_thickness]],
                 ]
             ],  
         ]
@@ -123,43 +123,43 @@ data =
     ],
     [ "components",
         [
-            [ BOX_SIZE_XYZ, [box_width, comp_width, box_depth/2+g_wall_thickness]],      
+            [ BOX_SIZE_XYZ, [box_width, comp_width, (box_depth+g_wall_thickness)/2]],      
             [ BOX_LID,
                 lid_attr,
             ],
             [ BOX_COMPONENT,                             
                 [
-                   [ CMP_COMPARTMENT_SIZE_XYZ, [ dice_height, dice_width, box_depth-g_wall_thickness] ],  
+                   [ CMP_COMPARTMENT_SIZE_XYZ, [ dice_height, dice_width, (box_depth+g_wall_thickness)/2-g_wall_thickness] ],  
                    [POSITION_XY,                           [0,CENTER]],   
                 ]
             ],
             [ BOX_COMPONENT,                             
                 [
-                   [ CMP_COMPARTMENT_SIZE_XYZ, [ car_height, dice_width, box_depth-g_wall_thickness] ],  
+                   [ CMP_COMPARTMENT_SIZE_XYZ, [ car_height, dice_width, (box_depth+g_wall_thickness)/2-g_wall_thickness] ],  
                    [POSITION_XY,                           [dice_height+g_wall_thickness,CENTER]],   
                 ]
             ],
             [ BOX_COMPONENT,                             
                 [
-                   [ CMP_COMPARTMENT_SIZE_XYZ, [ dice_height, dice_width, box_depth-g_wall_thickness] ],  
+                   [ CMP_COMPARTMENT_SIZE_XYZ, [ dice_height, dice_width, (box_depth+g_wall_thickness)/2-g_wall_thickness] ],  
                    [POSITION_XY,                           [dice_height+car_height+2*g_wall_thickness,CENTER]],   
                 ]
             ],
             [ BOX_COMPONENT,                             
                 [
-                   [ CMP_COMPARTMENT_SIZE_XYZ, [ extra, dice_width, box_depth-g_wall_thickness] ],  
+                   [ CMP_COMPARTMENT_SIZE_XYZ, [ extra, dice_width, (box_depth+g_wall_thickness)/2-g_wall_thickness] ],  
                    [POSITION_XY,                           [2*dice_height+car_height+3*g_wall_thickness,CENTER]],   
                 ]
             ]
         ]],
          [   "components_optional",
         [
-            [ BOX_SIZE_XYZ, [box_width, comp_width, box_depth/2+g_wall_thickness] ],
+            [ BOX_SIZE_XYZ, [box_width, comp_width, (box_depth+g_wall_thickness)/2] ],
             [ BOX_STACKABLE_B, true],
             [ BOX_NO_LID_B, true],   
             [ BOX_COMPONENT,
                 [
-                    [CMP_COMPARTMENT_SIZE_XYZ,  [ box_width-2*g_wall_thickness, comp_width-2*g_wall_thickness, box_depth/2+g_wall_thickness ],],
+                    [CMP_COMPARTMENT_SIZE_XYZ,  [ box_width-2*g_wall_thickness, comp_width-2*g_wall_thickness, (box_depth+g_wall_thickness)/2-g_wall_thickness ],],
                     [ CMP_CUTOUT_BOTTOM_B, true ],
                 ]
             ], 
